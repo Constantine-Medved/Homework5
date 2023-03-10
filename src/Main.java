@@ -22,15 +22,11 @@ public class Main {
     }
     public static void task2() {
         System.out.println("Задача 2.");
-        char clientOS = '0';
+        char clientOS = '1';
         int clientDeviceYear = 2014;
         switch (clientOS) {
             case '1':
-                if (clientDeviceYear >= 2015) {
-                    System.out.println("Установите версию приложения для Android по ссылке.");
-                } else {
-                    System.out.println("Установите облегченную версию приложения для Android по ссылке.");
-                }
+                    System.out.println((clientDeviceYear >= 2015)?"Установите версию приложения для Android по ссылке." : "Установите облегченную версию приложения для Android по ссылке.");
                 break;
             case '0':
                 if (clientDeviceYear >= 2015) {
