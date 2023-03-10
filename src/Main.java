@@ -45,7 +45,7 @@ public class Main {
     }
     public static void task3() {
         System.out.println("Задача 3.");
-        int year = 600;
+        int year = 2021;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным.");
         } else {
@@ -55,12 +55,15 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4.");
         int deliveryDistance = 95;
+        int deliveryDays = 1;
         if (deliveryDistance <= 20) {
-            System.out.println("Доставка займет 1 день.");
+            System.out.println("Потребуется дней: " + deliveryDays);
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println("Доставка займет 2 дня.");
+            deliveryDays = deliveryDays * 2;
+            System.out.println("Потребуется дней: " + deliveryDays);
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println("Доставка займет 3 дня.");
+            deliveryDays = deliveryDays * 3;
+            System.out.println("Потребуется дней: " + deliveryDays);
         } else {
             System.out.println("Доставки нет.");
         }
